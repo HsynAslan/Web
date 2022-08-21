@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 , maximum-scale=1"
+    />
+
+    <title>Hüseyin Aslan</title>
+    <link rel="stylesheet" href="aslan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/18128fd1cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script>
+      function myFunction() {
+        /* Get the text field */
+        var copyText = document.getElementById("myInput");
+
+        /* Select the text field */
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+        /* Copy the text inside the text field */
+        navigator.clipboard.writeText(copyText.value);
+
+        /* Alert the copied text */
+        alert("Copied the text: " + copyText.value);
+      }
+    </script>
+    <div class="hero" id="go-back">
+      <nav>
+        <h2 class="logo"><img src="./kendi-footm.jpg" alt="" /></h2>
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#hakkimda">Hakkımda</a></li>
+          <li><a href="#yazilim">Yazılım</a></li>
+          <li><a href="#egitim">Eğitim</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h4>Hello, my name is</h4>
+        <h1>Hüseyin <span>Aslan</span></h1>
+        <h3>I'am a Web Developer</h3>
+        <div class="newslatter">
+          <h5>İletişime Geç</h5>
+          <form>
+            <input
+              type="email"
+              name="email"
+              id="mail"
+              placeholder="Mail Adresiniz.."
+            />
+            <input type="submit" name="submit" value="Gönder" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <section class="about" id="hakkimda">
+      <div class="main">
+        <img src="" alt="" />
+        <div class="about-text">
+          <h2>Hakkımda</h2>
+
+          <p>
+            Merhaba, 22 yaşındayım ve Ankarada yaşıyorum. 3.sınıf Bilgisayar
+            Mühendisliği öğrencisiyim.
+          </p>
+          <!-- <a href="https://www.ktu.edu.tr/" target="_blank"
+            ><button type="button" class="button">Üniversite Linki</button></a
+          >
+          <a
+            href="http://www.katalog.ktu.edu.tr/DersBilgiPaketi/generalinfo.aspx?pid=9&lang=1"
+            target="_blank"
+            ><button type="button" class="button">Bilgi Paketi</button></a
+          > -->
+        </div>
+      </div>
+    </section>
+
+    <div class="service" id="yazilim">
+      <div class="title">
+        <h2>Yazılım</h2>
+      </div>
+
+      <div class="box">
+        <div class="card">
+          <h5>Html, Css, Js</h5>
+          <div class="paragraf">
+            <p>
+              Web üzerine olan çalışmamı
+              <a href="https://www.sadikturan.com/" target="_blank"
+                >Sadık Turan</a
+              >
+              ve
+              <a
+                href="https://gelecegiyazanlar.turkcell.com.tr/"
+                target="_blank"
+                >Türkcell</a
+              >
+              üzerinden ilerletmekteyim.
+              <br /><br /><br />
+
+              <a href="https://github.com/HsynAslan/Webb" target="_blank"
+                ><button id="card-btn" title="İndirmek için Tıkla">
+                  <i class="fa-solid fa-hand-point-right"></i>
+                  Geçmiş Kodlarım
+                </button></a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5>Python</h5>
+          <div class="paragraf">
+            <p>Python dilinde birçok okul projerlerinde yer aldım.</p>
+            <br /><br />
+            <a href="https://github.com/HsynAslan/python" target="_blank"
+              ><button id="card-btn" title="İndirmek için Tıkla">
+                <i class="fa-solid fa-hand-point-right"></i>
+                Geçmiş Kodlarım
+              </button></a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <h5>C / C++</h5>
+          <div class="paragraf">
+            <p>
+              Okulumuz C/C++ diline ağırlık verdiğinden bu dillerde birçok
+              matris çarpım kodlarında çalışmalarda bulundum. Ayriyeten
+              <a href="https://sadievrenseker.com/wp/">Sadi Evren Şeker</a> ve
+              <a href="https://www.udemy.com/user/ogun-birinci/"
+                >Ogün Birinci</a
+              >
+              'nden oop dersleri aldım.
+            </p>
+            <a href="https://github.com/HsynAslan/cppGitExample" target="_blank"
+              ><button id="card-btn" title="İndirmek için Tıkla">
+                <i class="fa-solid fa-hand-point-right"></i>
+                Geçmiş Kodlarım
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="egitim_section" id="egitim">
+      <h2>Eğitim</h2>
+      <p>Öğrenim Bilgilerime Aşağıdan Ulaşabilirsiniz</p>
+      <div class="egitim_link">
+        <div class="link">
+          <a href="https://www.ktu.edu.tr/" target="_blank" class="uni"
+            >Üniversite<span class="uni-bilgi"
+              >Karadeniz Teknik Üniversitesinde Eğitim Görmekteyim</span
+            ></a
+          >
+        </div>
+        <div class="link">
+          <a href="https://ykbanadolulisesi.meb.k12.tr/" id="lise"
+            >Lise<span id="lise-bilgi"
+              >Yahya Kemal Beyatlı Anadolu Lisesi' nden mezun oldum</span
+            ></a
+          >
+        </div>
+        <div class="link">
+          <a
+            href="./HÜSEYİN ASLAN CV.pdf"
+            download="HÜSEYİN ASLAN CV.pdf"
+            id="cv"
+            >CV<span id="cv-bilgi">PDF olarak indirmek için tıklayınız</span></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer id="iletisim">
+      <p>Hüseyin Aslan</p>
+      <p>Daha fazlası ve iletişim için Bazı Sosyal Medya Hesapları</p>
+      <div class="social">
+        <a href="https://www.instagram.com/huseyn_aslnn/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="www.linkedin.com/in/hüseyin-aslan-8442241a5" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/HsynAslan" target="_blank"
+          ><i class="fa-brands fa-git"></i
+        ></a>
+      </div>
+      <p class="end">CopyRight By HÜseyin Aslan</p>
+    </footer>
+    <div id="back-top">
+      <a href="#go-back"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+  </body>
+</html>
