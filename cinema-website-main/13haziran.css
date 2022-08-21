@@ -1,0 +1,296 @@
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        .all-button {
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 5px 12px;
+            transition-duration: .7s;
+            cursor: pointer;
+        }
+        
+        .all-button__dark {
+            color: #193498;
+            background-color: #fc997c;
+            border: 2px solid #69DADB;
+        }
+        
+        .all-button__dark:hover {
+            color: #193498;
+            background-color: #69DADB;
+            border: 2px solid #69DADB;
+        }
+        
+        .all-button__light {
+            color: #193498;
+            background-color: #fc997c;
+            border: 2px solid #193498;
+        }
+        
+        .all-button__light:hover {
+            color: #fc997c;
+            background-color: #193498;
+            border: 2px solid #69DADB;
+        }
+        
+        .main {
+            margin-top: 44px;
+        }
+        
+        #showcase {
+            background-image: url('bg.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 80vh;
+            width: 100%;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .showcase__headers {
+            position: absolute;
+            width: 40%;
+            color: #fff;
+            background: rgba(46, 76, 109, 0.3);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        
+        #how-it-works {
+            padding: 10px;
+            font-size: large;
+            color: #2E4C6D;
+            text-align: center;
+        }
+        
+        .main-header {
+            padding: 10px;
+            background-color: #FC997C;
+            margin-top: 0px;
+        }
+        
+        .main-header-fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 105px);
+            text-align: right;
+        }
+        
+        .main-nav__items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-nav__item {
+            display: inline-block;
+            margin: 0px 10px;
+        }
+        
+        .main-nav__item a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .main-header__logo {
+            color: #fff;
+            font-weight: bold;
+            font-size: 21px;
+            text-decoration: none;
+        }
+        
+        .main-nav__item::before {
+            content: '\2022';
+            color: #fff;
+        }
+        
+        .main-nav__item__login::before {
+            content: none;
+        }
+        
+        .main-nav__item:hover::before {
+            color: #2E4C6D;
+        }
+        
+        .main-nav__item a:active {
+            color: #fff;
+        }
+        
+        .main-nav__item__login a {
+            color: #fff;
+            background-color: #2E4C6D;
+            padding: 4px 10px;
+            border-radius: 8px;
+            border: 2px solid white;
+            transition-duration: .5s;
+        }
+        
+        .main-nav__item__login a:hover {
+            background-color: #fff;
+            color: #2E4C6D;
+            border-color: #2E4C6D;
+        }
+        
+        #how-it-works__p {
+            color: black;
+        }
+        
+        .col-3 {
+            float: left;
+            width: 33.3%;
+        }
+        
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+        .icon-box h3 {
+            color: #3e4555;
+            font-size: 26px;
+        }
+        
+        .icon-box i {
+            color: #FC997C;
+            font-size: 25px;
+        }
+        
+        .col-2 {
+            float: left;
+            width: 33.3%;
+            height: 450px;
+        }
+        
+        .features__left {
+            background-image: url("features.jpeg");
+            background-size: cover;
+        }
+        
+        .features__right {
+            background-color: #edf5f7;
+            padding: 60px;
+            vertical-align: top;
+        }
+        
+        .features__right>h3 {
+            font-size: 700;
+            font-size: 30px;
+        }
+        
+        .features__right>a:hover {
+            background-color: #edf5f7;
+            color: #FC997C;
+        }
+        
+        .features__right p {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .plan {
+            text-align: center;
+            padding: 5px;
+            width: 33.3%;
+            float: left;
+        }
+        
+        .row {
+            margin-bottom: 40px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .container {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        
+        .inner-plan {
+            background-color: #edf5f7;
+            padding: 25px 10px;
+            border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px;
+            transition: box-shadow .6s;
+        }
+        
+        .inner-plan:hover {
+            box-shadow: rgba(100, 100, 111, 0.9) 0px 7px 29px 0px;
+        }
+        
+        .plan__badge {
+            background-color: #fff;
+            color: #fc997c;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        .plan--2position {
+            position: relative;
+            top: -28px;
+        }
+        
+        .recommended__plan {
+            color: #fff;
+            background: #396eb0!important;
+        }
+        
+        .plan__features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .plan__features li {
+            margin: 6px 0px;
+        }
+        
+        .back-top {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        
+        .back-top i {
+            color: #FC997C;
+            font-size: 40px;
+        }
+        
+        .back-top i:hover {
+            color: #fb6537;
+            cursor: pointer;
+            font-size: 50px;
+            transition-duration: .2s;
+        }
+    
